@@ -1,5 +1,5 @@
 import express from 'express';
-import './databases';
+import './database';
 import cors from 'cors';
 import routes from './routes';
 

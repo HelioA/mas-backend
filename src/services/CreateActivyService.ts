@@ -1,5 +1,5 @@
 import { getRepository } from 'typeorm';
-import { Activity } from '../models/Activy';
+import { Activy } from '../models/Activy';
 
 interface ActivyData {
   name: string;

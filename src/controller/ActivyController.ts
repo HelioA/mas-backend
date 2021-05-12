@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { CreateActivyService } from '../services/CreateActivyService';
 
-class ActivyController {
+class ActivyController{
   async create(request: Request, response: Response) {
     const activyData = request.body;
 

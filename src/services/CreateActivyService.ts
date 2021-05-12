@@ -3,7 +3,7 @@ import { Activy } from '../models/Activy';
 
 interface ActivyData {
   name: string;
-  activity_date: string;
+  activy_date: string;
   course_unit_id: string;
 }
 

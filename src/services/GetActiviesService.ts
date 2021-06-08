@@ -1,13 +1,13 @@
 import { getRepository } from "typeorm";
 import { Activy } from "../models/Activy";
 
-interface userId {
-    id?: string;
+interface UserId {
+    id?:string;
 }
 
-class GetActiviesService {
+class GetActivyService {
 
-    public async execute({id}:userId){
+    public async execute({id}:UserId){
         console.log('Id do usuário da atividade: ' + id)
 
         const activyRepository = getRepository(Activy);
@@ -16,7 +16,7 @@ class GetActiviesService {
 
         if(!activies){
             return {
-                message: 'activies not found'
+                message:"activies not found"
             }
         }
 
@@ -26,4 +26,4 @@ class GetActiviesService {
 
 }
 
-export {GetActiviesService};
+export {GetActivyService}

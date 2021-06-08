@@ -38,9 +38,18 @@ class AuthenticateUserService {
             expiresIn
         });
 
-        return token;
+        const {id, name, email:emailUser} = user
 
+        return {
+            user:{
+                id,
+                name,
+                email: emailUser
+            },
+            token
+        };
     }
+
 }
 
 export {AuthenticateUserService};
